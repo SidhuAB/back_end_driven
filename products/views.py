@@ -6,6 +6,5 @@ from .models import Policy
 def prod_page(request):
 
     pol = Policy.objects.all()
-  #  print(pol.name)
     return render(request,'prod_page.html',{'pol':pol})
  
